@@ -1,11 +1,16 @@
 import { Link, Outlet } from "react-router-dom";
 export default function RootLayout() {
     return (
-        <div>
-            <Link to="/">Home</Link> | <Link to="/about">About</Link>
-            <div>
-               <Outlet />
-           </div>
+        <div id='background'>
+            <div id='nav'>
+                <div><Link to="/">Home</Link></div>
+                <div><Link to="/about">About</Link></div> 
+            </div>
+            
+            <main>
+                <div id='space'></div>
+                <Outlet />
+           </main>
        </div>
     );
 }
