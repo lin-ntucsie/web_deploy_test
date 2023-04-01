@@ -84,6 +84,8 @@ main {
 
 main section {
   margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #myself {
@@ -102,4 +104,22 @@ main section {
 #name {
   font-weight: bold;
   font-size: 32px;
+}
+
+.first-order {
+  font-size: large;
+  margin-top: 10px;
+}
+
+img {
+  width: 256px;
+  height: 384px;
+  border-radius: 10px;
+}
+
+#about {
+  background-color: gray;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 0 10px;
 }
